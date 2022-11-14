@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="/Table_Ass_01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hammersmith+One&family=Khand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb3d323939.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+         <div>
+            <img src="https://cloudvandana.com/wp-content/uploads/2021/04/logo.png" alt="Cloudvandana">
+          </div>
+          <h3>Assignment 1</h3>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Table</h3>
+               <table id="table_main">
+                     <tr>
+                        <th>SL.No.</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>City</th>
+                        <th>Country</th>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>BS</td>
+                        <td>Akhilesh</td>
+                        <td>Chittoor</td>
+                        <td>India</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Ruthe</td>
+                        <td>Brenstuhl</td>
+                        <td>Zaandam</td>
+                        <td>Netherlands</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Mal</td>
+                        <td>Domenichini</td>
+                        <td>Adela</td>
+                        <td>Philippines</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Carter</td>
+                        <td>Polkinhorn</td>
+                        <td>Malimaneek</td>
+                        <td>Indonesia</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Bryant</td>
+                        <td>Tanner</td>
+                        <td>Rueil-Malmaison</td>
+                        <td>France</td>
+                     </tr>
+               </table>
+        </section>
+        <div class="buttons">
+            <button type="button" onclick="myFunction()"> <i class="fa-solid fa-arrow-up"></i> Add row to top</button>
+            <button type="button" onclick="myFunctionButtom()"> <i class="fa-solid fa-arrow-down"></i>  Add row to bottom</button>
+        </div>
+    </main>  
+ <script>
+        function myFunction() {
+          var table = document.getElementById("table_main");
+          var row = table.insertRow(1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          cell1.innerHTML = "";
+          cell2.innerHTML = "";
+          cell3.innerHTML = "";
+          cell4.innerHTML = "";
+          cell5.innerHTML = "";
+         }
+       
+        function myFunctionButtom() {
+          var table = document.getElementById("table_main");
+          var row = table.insertRow(-1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          cell1.innerHTML = "";
+          cell2.innerHTML = "";
+          cell3.innerHTML = "";
+          cell4.innerHTML = "";
+          cell5.innerHTML = "";
+        }
+ </script>
+</body>
+</html>
